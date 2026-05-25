@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form</title>
+    <style>
+      body {
+        background-color: cadetblue;
+        color: floralwhite;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      table {
+        border-spacing: 10px;
+      }
+      td {
+        padding: 5px;
+      }
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 5px;
+        border-radius: 4px;
+        border: none;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: floralwhite;
+        color: cadetblue;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>COURSE REGISTRATION FORM</h1>
+    <form action="">
+      <legend>Personal Details</legend>
+      <fieldset>
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td>
+              <input type="text" id="fname" required placeholder="Ex: AKKU" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sname">Surname</label></td>
+            <td>
+              <input type="text" id="sname" required placeholder="EX: HOLI" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                id="mobile"
+                required
+                placeholder="EX: 8660740908"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="EX: holiakanksha@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password</label></td>
+            <td><input type="password" id="pass" required /></td>
+          </tr>
+          <tr>
+            <td><label for="cpass">Confirm Password</label></td>
+            <td><input type="password" id="cpass" required /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date Of Birth</label></td>
+            <td><input type="date" id="dob" required /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input type="number" id="age" required min="18" max="100" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" id="m" /><label for="m"
+                >Male</label
+              >
+              <input type="radio" name="gender" id="f" /><label for="f"
+                >Female</label
+              >
+              <input type="radio" name="gender" id="o" /><label for="o"
+                >Others</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+                <option value="germany">Germany</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="image">Upload Image</label></td>
+            <td><input type="file" id="image" required /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">SUBMIT FORM</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
